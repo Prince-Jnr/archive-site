@@ -42,9 +42,9 @@ nav a:hover{border-color:var(--ochre)}
    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96'%3E%3Cg fill='none' stroke='%23EEEBE3' stroke-opacity='.08' stroke-width='1.5'%3E%3Ccircle cx='24' cy='24' r='6'/%3E%3Ccircle cx='24' cy='24' r='13'/%3E%3Cpath d='M72 8l16 16-16 16-16-16z'/%3E%3Cpath d='M72 56l16 16-16 16-16-16z'/%3E%3Ccircle cx='24' cy='72' r='3'/%3E%3Cpath d='M8 72h32M24 56v32'/%3E%3C/g%3E%3C/svg%3E"),
    var(--indigo);
   display:flex;flex-direction:column;justify-content:space-between;gap:40px}
-.wordmark{font-family:var(--display);font-weight:800;line-height:.82;letter-spacing:-.045em;font-size:clamp(56px,19.5vw,330px);
+.wordmark{font-family:var(--display);font-weight:800;line-height:.82;letter-spacing:-.045em;font-size:clamp(38px,12.2vw,330px);
   display:flex;white-space:nowrap;margin-left:-.04em}
-.wordmark span{display:block;overflow:hidden;padding-bottom:.06em}
+.wordmark span{display:block;flex:0 0 auto;overflow:hidden;padding-bottom:.06em}
 .wordmark span i{display:block;font-style:normal;transform:translateY(105%);animation:rise .9s var(--ease) forwards;animation-delay:calc(var(--i)*70ms + 150ms)}
 @keyframes rise{to{transform:none}}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,5vw,80px);align-items:end}
