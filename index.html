@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ARCHIVE — Nigeria's creative history, on view</title>
+<meta name="description" content="A digital museum of Nigerian photography, music, fashion and design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar">
+  <a class="logo" href="#top" aria-label="ARCHIVE, home">ARCHIVE</a>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="#dial">Timeline</a></li>
+      <li><a href="#rooms">The four rooms</a></li>
+      <li><a href="#wall">The wall</a></li>
+      <li><a href="#festac">FESTAC '77</a></li>
+      <li><a href="#give">Add an object</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <h1 class="wordmark" aria-label="ARCHIVE" id="wordmark"></h1>
+  <div class="hero-grid">
+    <div>
+      <p class="tagline">The past is not quiet.</p>
+      <p class="lede">ARCHIVE is a digital museum of Nigerian photography, music, fashion and design. Every record here was made by someone in Lagos, Ibadan, Enugu or Kano who had something to say. Turn the dial and hear it.</p>
+      <div class="cta-row">
+        <a class="btn solid" href="#dial">Open the timeline</a>
+        <a class="btn ghost" href="#rooms">Walk the four rooms</a>
+      </div>
+    </div>
+    <figure>
+      <div class="plate d-fashion" data-slot="hero" data-kind="music" role="img" aria-label="Yoruba couple in a studio portrait"></div>
+      <figcaption class="caption" data-cap-for="hero"></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sec dial d-music" id="dial" aria-labelledby="dial-h">
+  <div class="sec-head">
+    <h2 id="dial-h">Turn the dial.</h2>
+    <p>Nine moments from the 1950s to today. Each one changed how Nigerians looked, sounded or dressed. Drag the slider, use the arrow keys, or pick a year.</p>
+  </div>
+
+  <div class="stage">
+    <div>
+      <div class="year" id="year" aria-hidden="true">1950</div>
+      <div class="entry" id="entry" aria-live="polite" aria-atomic="true">
+        <div class="tag"><b></b><span id="tag-t"></span></div>
+        <h3 id="e-title"></h3>
+        <p id="e-text"></p>
+      </div>
+    </div>
+    <figure><div class="plate entry-plate" id="e-plate" data-slot="entry-0" data-kind="music" role="img" aria-label="Selected moment"></div><figcaption class="caption" data-cap-for="entry-cap" id="e-cap"></figcaption></figure>
+  </div>
+
+  <div class="controls">
+    <div class="ctl-top">
+      <button class="step" id="prev" aria-label="Previous moment">←</button>
+      <input type="range" id="range" min="0" max="8" step="1" value="0" aria-label="Moment in time">
+      <button class="step" id="next" aria-label="Next moment">→</button>
+    </div>
+    <div class="years" id="years" role="group" aria-label="Choose a year"></div>
+  </div>
+</section>
+
+<section class="rooms" id="rooms" aria-labelledby="rooms-h">
+  <div class="sec" style="padding-bottom:clamp(36px,5vw,64px)">
+    <div class="sec-head" style="margin-bottom:0">
+      <h2 id="rooms-h">Four rooms. One country.</h2>
+      <p>Open a room to see what is inside. Photography keeps faces. Music keeps rooms full. Fashion keeps what people wore to be seen. Design keeps what we made to live with.</p>
+    </div>
+  </div>
+  <div id="room-list"></div>
+</section>
+
+<section class="sec wallsec" id="wall" aria-labelledby="wall-h">
+  <div class="sec-head">
+    <h2 id="wall-h">The wall.</h2>
+    <p>Photographs, sleeves, cloth, banknotes and buildings from the collection. Pick a room to filter, then select any piece to look closer.</p>
+  </div>
+  <div class="filters" id="filters" role="group" aria-label="Filter the wall by room"></div>
+  <p class="hint" id="wall-count" role="status" style="margin:14px 0 22px"></p>
+  <div class="wall" id="wall-grid"></div>
+</section>
+
+<section class="sec festac" id="festac" aria-labelledby="festac-h">
+  <div class="big" aria-hidden="true">1977</div>
+  <div class="festac-grid">
+    <div>
+      <h2 id="festac-h">The year every room was in the same city.</h2>
+      <p>From 15 January to 12 February 1977, Lagos hosted FESTAC '77, the Second World Black and African Festival of Arts and Culture. Artists, musicians, designers and performers came from across Africa and the diaspora. The National Theatre was built to hold it.</p>
+      <p>For four weeks, photography, music, fashion and design were not separate subjects. They were one event.</p>
+      <div class="four">
+        <a class="d-photography" href="#rooms" data-open="photography"><i></i>Photography</a>
+        <a class="d-music" href="#rooms" data-open="music"><i></i>Music</a>
+        <a class="d-fashion" href="#rooms" data-open="fashion"><i></i>Fashion</a>
+        <a class="d-design" href="#rooms" data-open="design"><i></i>Design</a>
+      </div>
+    </div>
+    <figure><div class="plate" data-slot="festac" data-kind="design" role="img" aria-label="Nigeria delegation sign at FESTAC '77"></div><figcaption class="caption" data-cap-for="festac" style="color:rgba(12,19,56,.75)"></figcaption></figure>
+  </div>
+</section>
+
+<section class="sec give" id="give" aria-labelledby="give-h">
+  <div class="give-grid">
+    <div>
+      <h2 id="give-h">Your family's photo album is a collection.</h2>
+      <p style="margin-top:22px">Old sleeves, wedding aso-ebi, studio prints, flyers, receipts for a sewing machine. If it was made here, it belongs here. Email us a photo and tell us who made it, when and where.</p>
+    </div>
+    <div class="sub">
+      <a class="btn give-btn" id="mail-btn" href="mailto:princeisaacisrael100@gmail.com?subject=An%20object%20for%20ARCHIVE&body=What%20is%20it%3F%0A%0AWho%20made%20it%3F%0A%0AWhen%20and%20where%3F%0A%0A(Attach%20your%20photo%20to%20this%20email.)">Email an object to ARCHIVE</a>
+      <p style="font-size:16px">Prefer to write it yourself? Send your photo and details to <a href="mailto:princeisaacisrael100@gmail.com"><strong>princeisaacisrael100@gmail.com</strong></a>.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<dialog id="lb" aria-label="Image viewer">
+  <button class="lb-x" id="lb-x" aria-label="Close viewer">Close</button>
+  <img id="lb-img" alt="">
+  <div class="lb-meta">
+    <div><p class="lb-t" id="lb-t"></p><p id="lb-c"></p><p id="lb-d" class="lb-d"></p></div>
+    <div class="lb-nav"><button id="lb-prev" type="button">Previous</button><button id="lb-next" type="button">Next</button></div>
+  </div>
+</dialog>
+
+<footer>
+  <div>
+    <span class="logo">ARCHIVE</span>
+    <p>ARCHIVE is a fictional digital museum, designed and built for a landing-page challenge. Dates and events are drawn from public record; the collection itself is imagined.</p>
+  </div>
+  <p>Images were gathered from public web sources for this design challenge. Credits appear where known; rights stay with the original makers.</p>
+</footer>
+
+<script src="script.js"></script>
+</html>
